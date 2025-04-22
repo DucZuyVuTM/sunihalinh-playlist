@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.song {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.song:hover {
+    background: #ccc;
+}
+
+.song-content {
+    display: flex; /* Giữ ảnh và thông tin bài hát trên cùng một hàng */
+    align-items: center;
+    width: 100%;
+}
+
+.song img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.song-info {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.video-container {
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    max-height: 0;
+    margin-top: 10px;
+    transition: max-height 0.5s ease-out;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 350px;
+}
